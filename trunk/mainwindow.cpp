@@ -1,32 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "qsyntaxhighlighter.h"
-
-MyHi::MyHi(QTextEdit *parent)
-        : QSyntaxHighlighter(parent)
-{
-    //Empty constructor
-    //Suck it
-    //No, Suck YOU!!!!
-    //test commit
-}
-
-void MyHi::highlightBlock(const QString &text)
-{
-    QTextCharFormat myClassFormat;
-    myClassFormat.setFontWeight(QFont::Bold);
-    myClassFormat.setForeground(Qt::darkMagenta);
-    QString pattern = "\\bvoid\\b";
-
-    QRegExp expression(pattern);
-    int index = text.indexOf(expression);
-    while (index >= 0) {
-        int length = expression.matchedLength();
-        setFormat(index, length, myClassFormat);
-        index = text.indexOf(expression, index + length);
-    }
-}
-
+#include "highlighter.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -35,7 +10,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     //QTextEdit *editor = new QTextEdit;
-    MyHi *hi = new MyHi(ui->mainEdit_2);
+   // MyHi *hi = new MyHi(ui->mainEdit_2);
+    QCppHighlighter *hi = new QCppHighlighter(ui->mainEdit_2);
     // Start application maximized - that's quite useful for IDE
     MainWindow::showMaximized();
 }
