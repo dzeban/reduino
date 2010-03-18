@@ -7,6 +7,7 @@ MyHi::MyHi(QTextEdit *parent)
 {
     //Empty constructor
     //Suck it
+    //No, Suck YOU!!!!
 }
 
 void MyHi::highlightBlock(const QString &text)
