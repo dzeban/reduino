@@ -77,15 +77,15 @@
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
     <value type="QString">CVS_RSH=ssh</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-abPOeMl4J3,guid=397afcc590403a2f8e0a342a4ba2253f</value>
-    <value type="QString">DESKTOP_AUTOSTART_ID=10405ae45611db48b4126891756870915900000021910001</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-vA5kMB3XBU,guid=274e9b8803d592a18fc71dfa4ba27a58</value>
+    <value type="QString">DESKTOP_AUTOSTART_ID=10e0103c97566a4eda126893935382806700000023630001</value>
     <value type="QString">DESKTOP_SESSION=gnome</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">GDMSESSION=gnome</value>
     <value type="QString">GDM_LANG=ru_RU.UTF-8</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_PID=2170</value>
-    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-WbIO7d/socket</value>
+    <value type="QString">GNOME_KEYRING_PID=2348</value>
+    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-WknC0g/socket</value>
     <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/finger/.gtkrc-1.2-gnome2</value>
     <value type="QString">G_BROKEN_FILENAMES=1</value>
     <value type="QString">HISTSIZE=1000</value>
@@ -103,28 +103,26 @@
     <value type="QString">MAIL=/var/spool/mail/finger</value>
     <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-finger</value>
     <value type="QString">PATH=/usr/lib/qt4/bin:/usr/lib/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/lib/ccache:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/finger/bin</value>
-    <value type="QString">PULSE_PROP_media.role=none</value>
-    <value type="QString">PULSE_PROP_phonon.streamid={f1add98e-0a79-4da4-b7bf-50d5a115261d}</value>
     <value type="QString">PWD=/home/finger</value>
     <value type="QString">QTDIR=/usr/lib/qt4</value>
     <value type="QString">QTINC=/usr/lib/qt-3.3/include</value>
     <value type="QString">QTLIB=/usr/lib/qt-3.3/lib</value>
     <value type="QString">QT_IM_MODULE=xim</value>
-    <value type="QString">SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2191,unix/unix:/tmp/.ICE-unix/2191</value>
+    <value type="QString">SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2363,unix/unix:/tmp/.ICE-unix/2363</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SHLVL=2</value>
     <value type="QString">SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-WbIO7d/socket.ssh</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-WknC0g/socket.ssh</value>
     <value type="QString">TERM=dumb</value>
     <value type="QString">USER=finger</value>
     <value type="QString">USERNAME=finger</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-finger-Yk5Bcr/database</value>
-    <value type="QString">XDG_SESSION_COOKIE=2f3531b71c8804ab7bbc7acc4adb4445-1268917567.125403-556279515</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-finger-WhM8QC/database</value>
+    <value type="QString">XDG_SESSION_COOKIE=2f3531b71c8804ab7bbc7acc4adb4445-1268939352.234370-1474978859</value>
     <value type="QString">XMODIFIERS=@im=none</value>
     <value type="QString">_=/usr/bin/mono</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
-    <value type="QString">/home/finger/projects/duino-ide/duino-ide/duino-ide.pro</value>
+    <value type="QString">/home/finger/projects/duino-ide/trunk/duino-ide.pro</value>
     <value type="QString">-spec</value>
     <value type="QString">linux-g++</value>
     <value type="QString">-r</value>
@@ -132,7 +130,7 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString">/usr/bin/qmake-qt4</value>
    <value key="abstractProcess.enabled" type="bool">false</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/home/finger/projects/duino-ide/duino-ide</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/finger/projects/duino-ide/trunk</value>
   </valuemap>
  </data>
  <data>
@@ -141,15 +139,15 @@
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
     <value type="QString">CVS_RSH=ssh</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-abPOeMl4J3,guid=397afcc590403a2f8e0a342a4ba2253f</value>
-    <value type="QString">DESKTOP_AUTOSTART_ID=10405ae45611db48b4126891756870915900000021910001</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-vA5kMB3XBU,guid=274e9b8803d592a18fc71dfa4ba27a58</value>
+    <value type="QString">DESKTOP_AUTOSTART_ID=10e0103c97566a4eda126893935382806700000023630001</value>
     <value type="QString">DESKTOP_SESSION=gnome</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">GDMSESSION=gnome</value>
     <value type="QString">GDM_LANG=ru_RU.UTF-8</value>
     <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_PID=2170</value>
-    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-WbIO7d/socket</value>
+    <value type="QString">GNOME_KEYRING_PID=2348</value>
+    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-WknC0g/socket</value>
     <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/finger/.gtkrc-1.2-gnome2</value>
     <value type="QString">G_BROKEN_FILENAMES=1</value>
     <value type="QString">HISTSIZE=1000</value>
@@ -167,23 +165,21 @@
     <value type="QString">MAIL=/var/spool/mail/finger</value>
     <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-finger</value>
     <value type="QString">PATH=/usr/lib/qt4/bin:/usr/lib/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/lib/ccache:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/finger/bin</value>
-    <value type="QString">PULSE_PROP_media.role=none</value>
-    <value type="QString">PULSE_PROP_phonon.streamid={f1add98e-0a79-4da4-b7bf-50d5a115261d}</value>
     <value type="QString">PWD=/home/finger</value>
     <value type="QString">QTDIR=/usr/lib/qt4</value>
     <value type="QString">QTINC=/usr/lib/qt-3.3/include</value>
     <value type="QString">QTLIB=/usr/lib/qt-3.3/lib</value>
     <value type="QString">QT_IM_MODULE=xim</value>
-    <value type="QString">SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2191,unix/unix:/tmp/.ICE-unix/2191</value>
+    <value type="QString">SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2363,unix/unix:/tmp/.ICE-unix/2363</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SHLVL=2</value>
     <value type="QString">SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-WbIO7d/socket.ssh</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-WknC0g/socket.ssh</value>
     <value type="QString">TERM=dumb</value>
     <value type="QString">USER=finger</value>
     <value type="QString">USERNAME=finger</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-finger-Yk5Bcr/database</value>
-    <value type="QString">XDG_SESSION_COOKIE=2f3531b71c8804ab7bbc7acc4adb4445-1268917567.125403-556279515</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-finger-WhM8QC/database</value>
+    <value type="QString">XDG_SESSION_COOKIE=2f3531b71c8804ab7bbc7acc4adb4445-1268939352.234370-1474978859</value>
     <value type="QString">XMODIFIERS=@im=none</value>
     <value type="QString">_=/usr/bin/mono</value>
    </valuelist>
@@ -193,7 +189,7 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
    <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/home/finger/projects/duino-ide/duino-ide</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/finger/projects/duino-ide/trunk</value>
   </valuemap>
  </data>
  <data>
