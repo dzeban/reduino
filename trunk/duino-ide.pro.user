@@ -57,7 +57,7 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <value key="QtVersionId" type="int">0</value>
-   <value key="ToolChain" type="int">0</value>
+   <value key="ToolChain" type="int">2</value>
    <value key="addQDumper" type=""></value>
    <value key="buildConfiguration" type="int">2</value>
   </valuemap>
@@ -67,6 +67,7 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
    <value key="QtVersionId" type="int">0</value>
+   <value key="ToolChain" type="int">2</value>
    <value key="addQDumper" type=""></value>
    <value key="buildConfiguration" type="int">0</value>
   </valuemap>
@@ -76,61 +77,46 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">CVS_RSH=ssh</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-vA5kMB3XBU,guid=274e9b8803d592a18fc71dfa4ba27a58</value>
-    <value type="QString">DESKTOP_AUTOSTART_ID=10e0103c97566a4eda126893935382806700000023630001</value>
-    <value type="QString">DESKTOP_SESSION=gnome</value>
-    <value type="QString">DISPLAY=:0.0</value>
-    <value type="QString">GDMSESSION=gnome</value>
-    <value type="QString">GDM_LANG=ru_RU.UTF-8</value>
-    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_PID=2348</value>
-    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-WknC0g/socket</value>
-    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/finger/.gtkrc-1.2-gnome2</value>
-    <value type="QString">G_BROKEN_FILENAMES=1</value>
-    <value type="QString">HISTSIZE=1000</value>
-    <value type="QString">HOME=/home/finger</value>
-    <value type="QString">HOSTNAME=laptop</value>
-    <value type="QString">IMSETTINGS_INTEGRATE_DESKTOP=yes</value>
-    <value type="QString">IMSETTINGS_MODULE=none</value>
-    <value type="QString">KDEDIRS=/usr</value>
-    <value type="QString">KDE_IS_PRELINKED=1</value>
-    <value type="QString">KMIX_PULSEAUDIO_DISABLE=1</value>
-    <value type="QString">LANG=ru_RU.UTF-8</value>
-    <value type="QString">LANGUAGE=</value>
-    <value type="QString">LESSOPEN=|/usr/bin/lesspipe.sh %s</value>
-    <value type="QString">LOGNAME=finger</value>
-    <value type="QString">MAIL=/var/spool/mail/finger</value>
-    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-finger</value>
-    <value type="QString">PATH=/usr/lib/qt4/bin:/usr/lib/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/lib/ccache:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/finger/bin</value>
-    <value type="QString">PWD=/home/finger</value>
-    <value type="QString">QTDIR=/usr/lib/qt4</value>
-    <value type="QString">QTINC=/usr/lib/qt-3.3/include</value>
-    <value type="QString">QTLIB=/usr/lib/qt-3.3/lib</value>
-    <value type="QString">QT_IM_MODULE=xim</value>
-    <value type="QString">SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2363,unix/unix:/tmp/.ICE-unix/2363</value>
-    <value type="QString">SHELL=/bin/bash</value>
-    <value type="QString">SHLVL=2</value>
-    <value type="QString">SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-WknC0g/socket.ssh</value>
-    <value type="QString">TERM=dumb</value>
-    <value type="QString">USER=finger</value>
-    <value type="QString">USERNAME=finger</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-finger-WhM8QC/database</value>
-    <value type="QString">XDG_SESSION_COOKIE=2f3531b71c8804ab7bbc7acc4adb4445-1268939352.234370-1474978859</value>
-    <value type="QString">XMODIFIERS=@im=none</value>
-    <value type="QString">_=/usr/bin/mono</value>
+    <value type="QString">ALLUSERSPROFILE=C:\Documents and Settings\All Users</value>
+    <value type="QString">APPDATA=C:\Documents and Settings\Admin\Application Data</value>
+    <value type="QString">CLIENTNAME=Console</value>
+    <value type="QString">COMMONPROGRAMFILES=C:\Program Files\Common Files</value>
+    <value type="QString">COMPUTERNAME=RALEX-LAPTOP</value>
+    <value type="QString">COMSPEC=C:\WINDOWS\system32\cmd.exe</value>
+    <value type="QString">FP_NO_HOST_CHECK=NO</value>
+    <value type="QString">HOMEDRIVE=C:</value>
+    <value type="QString">HOMEPATH=\Documents and Settings\Admin</value>
+    <value type="QString">LOGONSERVER=\\RALEX-LAPTOP</value>
+    <value type="QString">NUMBER_OF_PROCESSORS=2</value>
+    <value type="QString">OS=Windows_NT</value>
+    <value type="QString">PATH=C:\Qt\2010.02.1\mingw\bin;C:\Qt\2010.02.1\qt\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Sysinternals</value>
+    <value type="QString">PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH</value>
+    <value type="QString">PROCESSOR_ARCHITECTURE=x86</value>
+    <value type="QString">PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 13, GenuineIntel</value>
+    <value type="QString">PROCESSOR_LEVEL=6</value>
+    <value type="QString">PROCESSOR_REVISION=0f0d</value>
+    <value type="QString">PROGRAMFILES=C:\Program Files</value>
+    <value type="QString">QTDIR=C:/Qt/2010.02.1/qt</value>
+    <value type="QString">SESSIONNAME=Console</value>
+    <value type="QString">SYSTEMDRIVE=C:</value>
+    <value type="QString">SYSTEMROOT=C:\WINDOWS</value>
+    <value type="QString">TEMP=C:\DOCUME~1\Admin\LOCALS~1\Temp</value>
+    <value type="QString">TMP=C:\DOCUME~1\Admin\LOCALS~1\Temp</value>
+    <value type="QString">USERDOMAIN=RALEX-LAPTOP</value>
+    <value type="QString">USERNAME=Admin</value>
+    <value type="QString">USERPROFILE=C:\Documents and Settings\Admin</value>
+    <value type="QString">VS90COMNTOOLS=C:\Program Files\Microsoft Visual Studio 9.0\Common7\Tools\</value>
+    <value type="QString">WINDIR=C:\WINDOWS</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
-    <value type="QString">/home/finger/projects/duino-ide/trunk/duino-ide.pro</value>
+    <value type="QString">E:/code/arduino/reduino/duino-ide.pro</value>
     <value type="QString">-spec</value>
-    <value type="QString">linux-g++</value>
+    <value type="QString">win32-g++</value>
     <value type="QString">-r</value>
-    <value type="QString">CONFIG+=debug</value>
    </valuelist>
-   <value key="abstractProcess.command" type="QString">/usr/bin/qmake-qt4</value>
-   <value key="abstractProcess.enabled" type="bool">false</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/home/finger/projects/duino-ide/trunk</value>
+   <value key="abstractProcess.command" type="QString">c:/qt/2010.02.1/qt/bin/qmake.exe</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">E:/code/arduino/reduino</value>
   </valuemap>
  </data>
  <data>
@@ -138,58 +124,44 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">CVS_RSH=ssh</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-vA5kMB3XBU,guid=274e9b8803d592a18fc71dfa4ba27a58</value>
-    <value type="QString">DESKTOP_AUTOSTART_ID=10e0103c97566a4eda126893935382806700000023630001</value>
-    <value type="QString">DESKTOP_SESSION=gnome</value>
-    <value type="QString">DISPLAY=:0.0</value>
-    <value type="QString">GDMSESSION=gnome</value>
-    <value type="QString">GDM_LANG=ru_RU.UTF-8</value>
-    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString">GNOME_KEYRING_PID=2348</value>
-    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-WknC0g/socket</value>
-    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/finger/.gtkrc-1.2-gnome2</value>
-    <value type="QString">G_BROKEN_FILENAMES=1</value>
-    <value type="QString">HISTSIZE=1000</value>
-    <value type="QString">HOME=/home/finger</value>
-    <value type="QString">HOSTNAME=laptop</value>
-    <value type="QString">IMSETTINGS_INTEGRATE_DESKTOP=yes</value>
-    <value type="QString">IMSETTINGS_MODULE=none</value>
-    <value type="QString">KDEDIRS=/usr</value>
-    <value type="QString">KDE_IS_PRELINKED=1</value>
-    <value type="QString">KMIX_PULSEAUDIO_DISABLE=1</value>
-    <value type="QString">LANG=ru_RU.UTF-8</value>
-    <value type="QString">LANGUAGE=</value>
-    <value type="QString">LESSOPEN=|/usr/bin/lesspipe.sh %s</value>
-    <value type="QString">LOGNAME=finger</value>
-    <value type="QString">MAIL=/var/spool/mail/finger</value>
-    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-finger</value>
-    <value type="QString">PATH=/usr/lib/qt4/bin:/usr/lib/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/lib/ccache:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/finger/bin</value>
-    <value type="QString">PWD=/home/finger</value>
-    <value type="QString">QTDIR=/usr/lib/qt4</value>
-    <value type="QString">QTINC=/usr/lib/qt-3.3/include</value>
-    <value type="QString">QTLIB=/usr/lib/qt-3.3/lib</value>
-    <value type="QString">QT_IM_MODULE=xim</value>
-    <value type="QString">SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2363,unix/unix:/tmp/.ICE-unix/2363</value>
-    <value type="QString">SHELL=/bin/bash</value>
-    <value type="QString">SHLVL=2</value>
-    <value type="QString">SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass</value>
-    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-WknC0g/socket.ssh</value>
-    <value type="QString">TERM=dumb</value>
-    <value type="QString">USER=finger</value>
-    <value type="QString">USERNAME=finger</value>
-    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-finger-WhM8QC/database</value>
-    <value type="QString">XDG_SESSION_COOKIE=2f3531b71c8804ab7bbc7acc4adb4445-1268939352.234370-1474978859</value>
-    <value type="QString">XMODIFIERS=@im=none</value>
-    <value type="QString">_=/usr/bin/mono</value>
+    <value type="QString">ALLUSERSPROFILE=C:\Documents and Settings\All Users</value>
+    <value type="QString">APPDATA=C:\Documents and Settings\Admin\Application Data</value>
+    <value type="QString">CLIENTNAME=Console</value>
+    <value type="QString">COMMONPROGRAMFILES=C:\Program Files\Common Files</value>
+    <value type="QString">COMPUTERNAME=RALEX-LAPTOP</value>
+    <value type="QString">COMSPEC=C:\WINDOWS\system32\cmd.exe</value>
+    <value type="QString">FP_NO_HOST_CHECK=NO</value>
+    <value type="QString">HOMEDRIVE=C:</value>
+    <value type="QString">HOMEPATH=\Documents and Settings\Admin</value>
+    <value type="QString">LOGONSERVER=\\RALEX-LAPTOP</value>
+    <value type="QString">NUMBER_OF_PROCESSORS=2</value>
+    <value type="QString">OS=Windows_NT</value>
+    <value type="QString">PATH=C:\Qt\2010.02.1\mingw\bin;C:\Qt\2010.02.1\qt\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Sysinternals</value>
+    <value type="QString">PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH</value>
+    <value type="QString">PROCESSOR_ARCHITECTURE=x86</value>
+    <value type="QString">PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 13, GenuineIntel</value>
+    <value type="QString">PROCESSOR_LEVEL=6</value>
+    <value type="QString">PROCESSOR_REVISION=0f0d</value>
+    <value type="QString">PROGRAMFILES=C:\Program Files</value>
+    <value type="QString">QTDIR=C:/Qt/2010.02.1/qt</value>
+    <value type="QString">SESSIONNAME=Console</value>
+    <value type="QString">SYSTEMDRIVE=C:</value>
+    <value type="QString">SYSTEMROOT=C:\WINDOWS</value>
+    <value type="QString">TEMP=C:\DOCUME~1\Admin\LOCALS~1\Temp</value>
+    <value type="QString">TMP=C:\DOCUME~1\Admin\LOCALS~1\Temp</value>
+    <value type="QString">USERDOMAIN=RALEX-LAPTOP</value>
+    <value type="QString">USERNAME=Admin</value>
+    <value type="QString">USERPROFILE=C:\Documents and Settings\Admin</value>
+    <value type="QString">VS90COMNTOOLS=C:\Program Files\Microsoft Visual Studio 9.0\Common7\Tools\</value>
+    <value type="QString">WINDIR=C:\WINDOWS</value>
    </valuelist>
    <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
     <value type="QString">-w</value>
    </valuelist>
-   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.command" type="QString">C:/Qt/2010.02.1/mingw/bin/mingw32-make.exe</value>
    <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/home/finger/projects/duino-ide/trunk</value>
+   <value key="abstractProcess.workingDirectory" type="QString">E:/code/arduino/reduino</value>
   </valuemap>
  </data>
  <data>
