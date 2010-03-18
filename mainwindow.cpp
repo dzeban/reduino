@@ -8,6 +8,7 @@ MyHi::MyHi(QTextEdit *parent)
     //Empty constructor
     //Suck it
     //No, Suck YOU!!!!
+    //test commit
 }
 
 void MyHi::highlightBlock(const QString &text)
