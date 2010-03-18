@@ -5,6 +5,7 @@
 MyHi::MyHi(QTextEdit *parent)
         : QSyntaxHighlighter(parent)
 {
+    //Empty constructor
 }
 
 void MyHi::highlightBlock(const QString &text)
