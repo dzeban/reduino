@@ -114,6 +114,7 @@ QCppHighlighter::QCppHighlighter(QTextEdit *parent)
   HighlightingRule rule;
   keywordFormat.setForeground(Qt::darkBlue);
   keywordFormat.setFontWeight(QFont::Bold);
+  keywordFormat.setFontFamily("Verdana");
   functionFormat.setForeground(QColor(200,165,50));
   functionFormat.setFontWeight(QFont::Normal);
 
@@ -175,7 +176,7 @@ QCppHighlighter::QCppHighlighter(QTextEdit *parent)
 
   multiLineCommentFormat.setForeground(Qt::darkGreen);
 
-  quotationFormat.setForeground(Qt::red);
+  quotationFormat.setForeground(Qt::darkRed);
   rule.pattern = QRegExp("\".*\"");
   rule.format = quotationFormat;
   highlightingRules.append(rule);
