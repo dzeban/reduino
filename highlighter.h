@@ -2,6 +2,7 @@
 #define HIGHLIGHTER_H
 
 #include <QSyntaxHighlighter>
+#include <QDebug>
 
 class MyHi : public QSyntaxHighlighter
 {
@@ -42,6 +43,5 @@ private:
   QTextCharFormat quotationFormat;
   QTextCharFormat numberFormat;
 };
-
 
 #endif // HIGHLIGHTER_H
