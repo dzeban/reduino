@@ -42,7 +42,7 @@
        </font>
       </property>
       <property name="cursor">
-       <cursorShape>CrossCursor</cursorShape>
+       <cursorShape>ArrowCursor</cursorShape>
       </property>
       <property name="tabPosition">
        <enum>QTabWidget::North</enum>
