@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file alias="first-ico">icons/003.ico</file>
         <file alias="save">icons/003.png</file>
         <file alias="undo">icons/standart/png/24x24/001_23.png</file>
         <file alias="redo">icons/standart/png/24x24/001_21.png</file>
