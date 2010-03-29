@@ -20,7 +20,7 @@
    <string>ReDuino</string>
   </property>
   <property name="windowIcon">
-   <iconset>
+   <iconset resource="icons.qrc">
     <normaloff>:/main</normaloff>:/main</iconset>
   </property>
   <property name="styleSheet">
@@ -54,7 +54,7 @@
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideNone</enum>
@@ -643,7 +643,7 @@ padding:0px;</string>
      <x>0</x>
      <y>0</y>
      <width>804</width>
-     <height>20</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_2">
@@ -788,7 +788,7 @@ padding:0px;</string>
   </action>
   <action name="actionOpenIcon">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/open</normaloff>:/open</iconset>
    </property>
    <property name="text">
@@ -797,7 +797,7 @@ padding:0px;</string>
   </action>
   <action name="actionSaveIcon">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/save</normaloff>:/save</iconset>
    </property>
    <property name="text">
@@ -833,7 +833,7 @@ padding:0px;</string>
   </action>
   <action name="actionUndoIcon">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/undo</normaloff>:/undo</iconset>
    </property>
    <property name="text">
@@ -842,7 +842,7 @@ padding:0px;</string>
   </action>
   <action name="action_Redo">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/redo</normaloff>:/redo</iconset>
    </property>
    <property name="text">
@@ -871,7 +871,7 @@ padding:0px;</string>
   </action>
   <action name="actionCompileIcon">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/compile</normaloff>:/compile</iconset>
    </property>
    <property name="text">
@@ -880,7 +880,7 @@ padding:0px;</string>
   </action>
   <action name="actionUploadIcon">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/upload</normaloff>:/upload</iconset>
    </property>
    <property name="text">
@@ -899,7 +899,7 @@ padding:0px;</string>
   </action>
   <action name="actionSerialMonitor">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/monitor</normaloff>:/monitor</iconset>
    </property>
    <property name="text">
@@ -1013,6 +1013,8 @@ padding:0px;</string>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>
