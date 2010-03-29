@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QCppHighlighter *hi = new QCppHighlighter(ui->mainEdit_2->document());
     //test
+    //ololo
 }
 
 MainWindow::~MainWindow()
