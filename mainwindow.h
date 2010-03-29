@@ -25,7 +25,7 @@ private:
 
 private slots:
     void on_actionOpenIcon_triggered();
-    void on_action_exit_triggered();
+    void on_actionExit_triggered();
 };
 
 #endif // MAINWINDOW_H

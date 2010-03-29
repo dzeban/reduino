@@ -20,7 +20,7 @@
    <string>ReDuino</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="icons.qrc">
+   <iconset>
     <normaloff>:/main</normaloff>:/main</iconset>
   </property>
   <property name="styleSheet">
@@ -811,7 +811,7 @@ padding:0px;</string>
   </action>
   <action name="actionOpenIcon">
    <property name="icon">
-    <iconset resource="icons.qrc">
+    <iconset>
      <normaloff>:/open</normaloff>:/open</iconset>
    </property>
    <property name="text">
@@ -820,7 +820,7 @@ padding:0px;</string>
   </action>
   <action name="actionSaveIcon">
    <property name="icon">
-    <iconset resource="icons.qrc">
+    <iconset>
      <normaloff>:/save</normaloff>:/save</iconset>
    </property>
    <property name="text">
@@ -856,7 +856,7 @@ padding:0px;</string>
   </action>
   <action name="actionUndoIcon">
    <property name="icon">
-    <iconset resource="icons.qrc">
+    <iconset>
      <normaloff>:/undo</normaloff>:/undo</iconset>
    </property>
    <property name="text">
@@ -865,7 +865,7 @@ padding:0px;</string>
   </action>
   <action name="action_Redo">
    <property name="icon">
-    <iconset resource="icons.qrc">
+    <iconset>
      <normaloff>:/redo</normaloff>:/redo</iconset>
    </property>
    <property name="text">
@@ -894,7 +894,7 @@ padding:0px;</string>
   </action>
   <action name="actionCompileIcon">
    <property name="icon">
-    <iconset resource="icons.qrc">
+    <iconset>
      <normaloff>:/compile</normaloff>:/compile</iconset>
    </property>
    <property name="text">
@@ -903,7 +903,7 @@ padding:0px;</string>
   </action>
   <action name="actionUploadIcon">
    <property name="icon">
-    <iconset resource="icons.qrc">
+    <iconset>
      <normaloff>:/upload</normaloff>:/upload</iconset>
    </property>
    <property name="text">
@@ -922,7 +922,7 @@ padding:0px;</string>
   </action>
   <action name="actionSerialMonitor">
    <property name="icon">
-    <iconset resource="icons.qrc">
+    <iconset>
      <normaloff>:/monitor</normaloff>:/monitor</iconset>
    </property>
    <property name="text">
@@ -1036,8 +1036,6 @@ padding:0px;</string>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="icons.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

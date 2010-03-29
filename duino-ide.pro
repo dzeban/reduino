@@ -5,7 +5,8 @@ TARGET = duino-ide
 TEMPLATE = app
 SOURCES += main.cpp \
     mainwindow.cpp \
-    highlighter.cpp
+    highlighter.cpp \
+    actions/mainwindow_actions.cpp
 HEADERS += mainwindow.h \
     highlighter.h
 FORMS += mainwindow.ui
