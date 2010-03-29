@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QDebug>
 
+#include <QFileDialog>
+
 namespace Ui {
     class MainWindow;
 }
@@ -22,6 +24,7 @@ private:
     Ui::MainWindow *ui;
 
 private slots:
+    void on_actionOpenIcon_triggered();
     void on_action_exit_triggered();
 };
 
