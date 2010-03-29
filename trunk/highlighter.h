@@ -4,25 +4,11 @@
 #include <QSyntaxHighlighter>
 #include <QDebug>
 
-class MyHi : public QSyntaxHighlighter
-{
-Q_OBJECT
-    public:
-    MyHi(QTextEdit *parent = 0);
-
-    protected:
-        void highlightBlock(const QString &text);
-        void highlightKeywords(const QString &text);
-        void highlightMultilineComments(const QString &text);
-        void highlightStrings(const QString &text);
-};
-
-
 class QCppHighlighter : public QSyntaxHighlighter
 {
         Q_OBJECT
 public:
-  QCppHighlighter(QTextEdit *parent = 0);
+  QCppHighlighter(QTextDocument *parent = 0);
 protected:
   void highlightBlock(const QString &text);
 private:
