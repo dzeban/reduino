@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
     qDebug() << ui->mainEdit_2->fontPointSize();
     QCppHighlighter *hi = new QCppHighlighter(ui->mainEdit_2);
     // Start application maximized - that's quite useful for IDE
-    MainWindow::showMaximized();
+   // MainWindow::showMaximized();
 }
 
 MainWindow::~MainWindow()
