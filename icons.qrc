@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="first-ico">icons/003.ico</file>
+        <file alias="save">icons/003.png</file>
+        <file alias="undo">icons/standart/png/24x24/001_23.png</file>
+        <file alias="redo">icons/standart/png/24x24/001_21.png</file>
+        <file alias="folder">icons/standart/png/24x24/001_43.png</file>
+        <file alias="compile">icons/standart/png/24x24/001_07.png</file>
+        <file alias="upload">icons/standart/png/24x24/001_53.png</file>
+        <file alias="open">icons/020.png</file>
+        <file alias="monitor">icons/standart/png/24x24/001_44.png</file>
+        <file alias="main">icons/standart/png/24x24/001_19.png</file>
+    </qresource>
+</RCC>
