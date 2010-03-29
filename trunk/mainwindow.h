@@ -20,6 +20,9 @@ protected:
 
 private:
     Ui::MainWindow *ui;
+
+private slots:
+    void on_action_exit_triggered();
 };
 
 #endif // MAINWINDOW_H
