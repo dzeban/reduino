@@ -9,17 +9,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //QTextEdit *editor = new QTextEdit;
-   // MyHi *hi = new MyHi(ui->mainEdit_2);
-    //ui->mainEdit_2->setFontFamily("Arial");
-   // qDebug("%s",ui->mainEdit_2->fontFamily());
-   // qDebug() << ui->mainEdit_2->fontFamily();
-    ui->mainEdit_2->setFontPointSize(50);
-    qDebug() << ui->mainEdit_2->fontPointSize();
-    QCppHighlighter *hi = new QCppHighlighter(ui->mainEdit_2);
 
-    // Start application maximized - that's quite useful for IDE
-    //MainWindow::showMaximized();
+    QCppHighlighter *hi = new QCppHighlighter(ui->mainEdit_2->document());
+
 }
 
 MainWindow::~MainWindow()
