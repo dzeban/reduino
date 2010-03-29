@@ -57,7 +57,7 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <value key="QtVersionId" type="int">0</value>
-   <value key="ToolChain" type="int">2</value>
+   <value key="ToolChain" type="int">0</value>
    <value key="addQDumper" type=""></value>
    <value key="buildConfiguration" type="int">2</value>
   </valuemap>
@@ -67,7 +67,7 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
    <value key="QtVersionId" type="int">0</value>
-   <value key="ToolChain" type="int">2</value>
+   <value key="ToolChain" type="int">0</value>
    <value key="addQDumper" type=""></value>
    <value key="buildConfiguration" type="int">0</value>
   </valuemap>
@@ -77,46 +77,52 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">ALLUSERSPROFILE=C:\Documents and Settings\All Users</value>
-    <value type="QString">APPDATA=C:\Documents and Settings\Admin\Application Data</value>
-    <value type="QString">CLIENTNAME=Console</value>
-    <value type="QString">COMMONPROGRAMFILES=C:\Program Files\Common Files</value>
-    <value type="QString">COMPUTERNAME=RALEX-LAPTOP</value>
-    <value type="QString">COMSPEC=C:\WINDOWS\system32\cmd.exe</value>
-    <value type="QString">FP_NO_HOST_CHECK=NO</value>
-    <value type="QString">HOMEDRIVE=C:</value>
-    <value type="QString">HOMEPATH=\Documents and Settings\Admin</value>
-    <value type="QString">LOGONSERVER=\\RALEX-LAPTOP</value>
-    <value type="QString">NUMBER_OF_PROCESSORS=2</value>
-    <value type="QString">OS=Windows_NT</value>
-    <value type="QString">PATH=C:\Qt\2010.02.1\mingw\bin;C:\Qt\2010.02.1\qt\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Sysinternals</value>
-    <value type="QString">PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH</value>
-    <value type="QString">PROCESSOR_ARCHITECTURE=x86</value>
-    <value type="QString">PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 13, GenuineIntel</value>
-    <value type="QString">PROCESSOR_LEVEL=6</value>
-    <value type="QString">PROCESSOR_REVISION=0f0d</value>
-    <value type="QString">PROGRAMFILES=C:\Program Files</value>
-    <value type="QString">QTDIR=C:/Qt/2010.02.1/qt</value>
-    <value type="QString">SESSIONNAME=Console</value>
-    <value type="QString">SYSTEMDRIVE=C:</value>
-    <value type="QString">SYSTEMROOT=C:\WINDOWS</value>
-    <value type="QString">TEMP=C:\DOCUME~1\Admin\LOCALS~1\Temp</value>
-    <value type="QString">TMP=C:\DOCUME~1\Admin\LOCALS~1\Temp</value>
-    <value type="QString">USERDOMAIN=RALEX-LAPTOP</value>
-    <value type="QString">USERNAME=Admin</value>
-    <value type="QString">USERPROFILE=C:\Documents and Settings\Admin</value>
-    <value type="QString">VS90COMNTOOLS=C:\Program Files\Microsoft Visual Studio 9.0\Common7\Tools\</value>
-    <value type="QString">WINDIR=C:\WINDOWS</value>
+    <value type="QString">DISPLAY=:0</value>
+    <value type="QString">GREP_COLOR=1;33</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
+    <value type="QString">HOME=/home/finger</value>
+    <value type="QString">HUSHLOGIN=FALSE</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">J2REDIR=/usr/lib/jvm/java-6-openjdk/jre</value>
+    <value type="QString">J2SDKDIR=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">JAVA_HOME=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">LANG=ru_RU.UTF-8</value>
+    <value type="QString">LD_LIBRARY_PATH=/opt/qtcreator/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LOGNAME=finger</value>
+    <value type="QString">MAIL=/var/spool/mail/finger</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
+    <value type="QString">OOO_FORCE_DESKTOP=gnome</value>
+    <value type="QString">PATH=/usr/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
+    <value type="QString">PWD=/home/finger</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=35</value>
+    <value type="QString">TERM=linux</value>
+    <value type="QString">USER=finger</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">XAUTHORITY=/home/finger/.Xauthority</value>
+    <value type="QString">XDG_CACHE_HOME=/home/finger/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/finger/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/finger/.local/share</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
-    <value type="QString">E:/code/arduino/reduino/duino-ide.pro</value>
+    <value type="QString">/home/finger/projects/reduino/duino-ide.pro</value>
     <value type="QString">-spec</value>
-    <value type="QString">win32-g++</value>
+    <value type="QString">linux-g++</value>
     <value type="QString">-r</value>
+    <value type="QString">CONFIG+=debug</value>
    </valuelist>
-   <value key="abstractProcess.command" type="QString">c:/qt/2010.02.1/qt/bin/qmake.exe</value>
+   <value key="abstractProcess.command" type="QString">/usr/bin/qmake</value>
    <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">E:/code/arduino/reduino</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/finger/projects/reduino</value>
   </valuemap>
  </data>
  <data>
@@ -124,44 +130,49 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">ALLUSERSPROFILE=C:\Documents and Settings\All Users</value>
-    <value type="QString">APPDATA=C:\Documents and Settings\Admin\Application Data</value>
-    <value type="QString">CLIENTNAME=Console</value>
-    <value type="QString">COMMONPROGRAMFILES=C:\Program Files\Common Files</value>
-    <value type="QString">COMPUTERNAME=RALEX-LAPTOP</value>
-    <value type="QString">COMSPEC=C:\WINDOWS\system32\cmd.exe</value>
-    <value type="QString">FP_NO_HOST_CHECK=NO</value>
-    <value type="QString">HOMEDRIVE=C:</value>
-    <value type="QString">HOMEPATH=\Documents and Settings\Admin</value>
-    <value type="QString">LOGONSERVER=\\RALEX-LAPTOP</value>
-    <value type="QString">NUMBER_OF_PROCESSORS=2</value>
-    <value type="QString">OS=Windows_NT</value>
-    <value type="QString">PATH=C:\Qt\2010.02.1\mingw\bin;C:\Qt\2010.02.1\qt\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Sysinternals</value>
-    <value type="QString">PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH</value>
-    <value type="QString">PROCESSOR_ARCHITECTURE=x86</value>
-    <value type="QString">PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 13, GenuineIntel</value>
-    <value type="QString">PROCESSOR_LEVEL=6</value>
-    <value type="QString">PROCESSOR_REVISION=0f0d</value>
-    <value type="QString">PROGRAMFILES=C:\Program Files</value>
-    <value type="QString">QTDIR=C:/Qt/2010.02.1/qt</value>
-    <value type="QString">SESSIONNAME=Console</value>
-    <value type="QString">SYSTEMDRIVE=C:</value>
-    <value type="QString">SYSTEMROOT=C:\WINDOWS</value>
-    <value type="QString">TEMP=C:\DOCUME~1\Admin\LOCALS~1\Temp</value>
-    <value type="QString">TMP=C:\DOCUME~1\Admin\LOCALS~1\Temp</value>
-    <value type="QString">USERDOMAIN=RALEX-LAPTOP</value>
-    <value type="QString">USERNAME=Admin</value>
-    <value type="QString">USERPROFILE=C:\Documents and Settings\Admin</value>
-    <value type="QString">VS90COMNTOOLS=C:\Program Files\Microsoft Visual Studio 9.0\Common7\Tools\</value>
-    <value type="QString">WINDIR=C:\WINDOWS</value>
+    <value type="QString">DISPLAY=:0</value>
+    <value type="QString">GREP_COLOR=1;33</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
+    <value type="QString">HOME=/home/finger</value>
+    <value type="QString">HUSHLOGIN=FALSE</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">J2REDIR=/usr/lib/jvm/java-6-openjdk/jre</value>
+    <value type="QString">J2SDKDIR=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">JAVA_HOME=/usr/lib/jvm/java-6-openjdk</value>
+    <value type="QString">LANG=ru_RU.UTF-8</value>
+    <value type="QString">LD_LIBRARY_PATH=/opt/qtcreator/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LOGNAME=finger</value>
+    <value type="QString">MAIL=/var/spool/mail/finger</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
+    <value type="QString">OOO_FORCE_DESKTOP=gnome</value>
+    <value type="QString">PATH=/usr/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
+    <value type="QString">PWD=/home/finger</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=35</value>
+    <value type="QString">TERM=linux</value>
+    <value type="QString">USER=finger</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">XAUTHORITY=/home/finger/.Xauthority</value>
+    <value type="QString">XDG_CACHE_HOME=/home/finger/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/finger/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/finger/.local/share</value>
    </valuelist>
    <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
     <value type="QString">-w</value>
    </valuelist>
-   <value key="abstractProcess.command" type="QString">C:/Qt/2010.02.1/mingw/bin/mingw32-make.exe</value>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
    <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">E:/code/arduino/reduino</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/finger/projects/reduino</value>
   </valuemap>
  </data>
  <data>

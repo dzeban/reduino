@@ -20,8 +20,7 @@
    <string>ReDuino</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -79,8 +78,11 @@
            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Liberation Sans'; font-size:10pt;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;table style=&quot;-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;&quot;&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border: none;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Liberation Sans';&quot;&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
         </item>
@@ -122,6 +124,9 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:10pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;table style=&quot;-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;&quot;&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border: none;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Liberation Sans'; font-weight:400;&quot;&gt;// Project 12 - Melody Player&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Liberation Sans'; font-weight:400;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Liberation Sans'; font-weight:400;&quot;&gt;#define GAMMAOFFSET 4&lt;/span&gt;&lt;/p&gt;
@@ -332,7 +337,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Liberation Sans'; font-weight:400;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Liberation Sans'; font-weight:400;&quot;&gt;	} &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Liberation Sans'; font-weight:400;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Liberation Sans'; font-weight:400;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Liberation Sans'; font-weight:400;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
         </item>
@@ -655,13 +660,29 @@ padding:0px;</string>
      <x>0</x>
      <y>0</y>
      <width>804</width>
-     <height>20</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_2">
     <property name="title">
      <string>&amp;Edit</string>
     </property>
+    <addaction name="action_Copy"/>
+    <addaction name="actionRedo"/>
+    <addaction name="separator"/>
+    <addaction name="actionCopy"/>
+    <addaction name="action_Paste"/>
+    <addaction name="action_Delete"/>
+    <addaction name="separator"/>
+    <addaction name="action_Select_All"/>
+    <addaction name="separator"/>
+    <addaction name="actionFind_Replace"/>
+    <addaction name="action_Find"/>
+    <addaction name="separator"/>
+    <addaction name="actionAuto_Format"/>
+    <addaction name="separator"/>
+    <addaction name="actionComment"/>
+    <addaction name="actionUncomment"/>
    </widget>
    <widget class="QMenu" name="menu_3">
     <property name="title">
@@ -672,23 +693,75 @@ padding:0px;</string>
     <property name="title">
      <string>&amp;Window</string>
     </property>
+    <widget class="QMenu" name="menuPanels">
+     <property name="title">
+      <string>Panels</string>
+     </property>
+     <addaction name="actionProject_Dock"/>
+     <addaction name="actionFunctions_Dock"/>
+     <addaction name="actionOutput_Dock"/>
+     <addaction name="actionToolbar"/>
+    </widget>
+    <addaction name="actionFull_Screen"/>
+    <addaction name="menuPanels"/>
    </widget>
    <widget class="QMenu" name="menu_6">
     <property name="title">
      <string>&amp;Help</string>
     </property>
+    <addaction name="actionAbout_this_program"/>
+    <addaction name="actionAbout_At"/>
    </widget>
    <widget class="QMenu" name="menu_4">
     <property name="title">
      <string>&amp;Project</string>
     </property>
+    <widget class="QMenu" name="menuBoard">
+     <property name="title">
+      <string>Board</string>
+     </property>
+     <addaction name="actionType"/>
+     <addaction name="actionConnection"/>
+    </widget>
+    <addaction name="actionCompile"/>
+    <addaction name="actionUpload"/>
+    <addaction name="actionCompile_Upload"/>
+    <addaction name="separator"/>
+    <addaction name="menuBoard"/>
    </widget>
    <widget class="QMenu" name="menu">
     <property name="title">
      <string>&amp;File</string>
     </property>
-    <addaction name="action_4"/>
-    <addaction name="action_5"/>
+    <widget class="QMenu" name="menu_Open">
+     <property name="title">
+      <string>&amp;Open</string>
+     </property>
+     <addaction name="actionProject_2"/>
+     <addaction name="actionFile_2"/>
+    </widget>
+    <widget class="QMenu" name="menuNew">
+     <property name="title">
+      <string>&amp;New</string>
+     </property>
+     <addaction name="actionProject"/>
+     <addaction name="actionFile"/>
+    </widget>
+    <widget class="QMenu" name="menuOpen_Recent">
+     <property name="title">
+      <string>Open &amp;Recent</string>
+     </property>
+     <addaction name="action1_pde"/>
+     <addaction name="actionSosat_pde"/>
+    </widget>
+    <addaction name="menuNew"/>
+    <addaction name="separator"/>
+    <addaction name="menu_Open"/>
+    <addaction name="menuOpen_Recent"/>
+    <addaction name="separator"/>
+    <addaction name="action_Save"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
     <addaction name="action_3"/>
    </widget>
    <addaction name="menu"/>
@@ -697,6 +770,26 @@ padding:0px;</string>
    <addaction name="menu_4"/>
    <addaction name="menu_5"/>
    <addaction name="menu_6"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_4"/>
+   <addaction name="action_5"/>
+   <addaction name="separator"/>
+   <addaction name="action_Undo"/>
+   <addaction name="action_Redo"/>
+   <addaction name="separator"/>
+   <addaction name="action_Compile"/>
+   <addaction name="action_Upload"/>
+   <addaction name="actionSerial_Monitor"/>
   </widget>
   <action name="action">
    <property name="text">
@@ -721,6 +814,186 @@ padding:0px;</string>
   <action name="action_5">
    <property name="text">
     <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save &amp;As</string>
+   </property>
+  </action>
+  <action name="action_Copy">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="action_Paste">
+   <property name="text">
+    <string>&amp;Paste</string>
+   </property>
+  </action>
+  <action name="action_Undo">
+   <property name="text">
+    <string>&amp;Undo</string>
+   </property>
+  </action>
+  <action name="action_Redo">
+   <property name="text">
+    <string>&amp;Redo</string>
+   </property>
+  </action>
+  <action name="action_Delete">
+   <property name="text">
+    <string>&amp;Delete</string>
+   </property>
+  </action>
+  <action name="action_Select_All">
+   <property name="text">
+    <string>&amp;Select All</string>
+   </property>
+  </action>
+  <action name="action_Find">
+   <property name="text">
+    <string>&amp;Find</string>
+   </property>
+  </action>
+  <action name="actionFind_Replace">
+   <property name="text">
+    <string>Find Replac&amp;e</string>
+   </property>
+  </action>
+  <action name="action_Compile">
+   <property name="text">
+    <string>&amp;Compile</string>
+   </property>
+  </action>
+  <action name="action_Upload">
+   <property name="text">
+    <string>&amp;Upload</string>
+   </property>
+  </action>
+  <action name="actionCompile_Upload">
+   <property name="text">
+    <string>C&amp;ompile&amp;&amp;Upload</string>
+   </property>
+  </action>
+  <action name="actionConnection">
+   <property name="text">
+    <string>Connection</string>
+   </property>
+  </action>
+  <action name="actionSerial_Monitor">
+   <property name="text">
+    <string>Serial Monitor</string>
+   </property>
+  </action>
+  <action name="actionType">
+   <property name="text">
+    <string>Type</string>
+   </property>
+  </action>
+  <action name="actionAuto_Format">
+   <property name="text">
+    <string>Auto Format</string>
+   </property>
+  </action>
+  <action name="actionProject">
+   <property name="text">
+    <string>&amp;Project</string>
+   </property>
+  </action>
+  <action name="actionFile">
+   <property name="text">
+    <string>&amp;File</string>
+   </property>
+  </action>
+  <action name="actionProject_2">
+   <property name="text">
+    <string>&amp;Project</string>
+   </property>
+  </action>
+  <action name="actionFile_2">
+   <property name="text">
+    <string>&amp;File</string>
+   </property>
+  </action>
+  <action name="action1_pde">
+   <property name="text">
+    <string>1.pde</string>
+   </property>
+  </action>
+  <action name="actionSosat_pde">
+   <property name="text">
+    <string>Sosat.pde</string>
+   </property>
+  </action>
+  <action name="actionComment">
+   <property name="text">
+    <string>Comment</string>
+   </property>
+  </action>
+  <action name="actionUncomment">
+   <property name="text">
+    <string>Uncomment</string>
+   </property>
+  </action>
+  <action name="actionFull_Screen">
+   <property name="text">
+    <string>Full Screen</string>
+   </property>
+  </action>
+  <action name="actionAbout_this_program">
+   <property name="text">
+    <string>About Reeno</string>
+   </property>
+  </action>
+  <action name="actionAbout_At">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionProject_Dock">
+   <property name="text">
+    <string>Project Dock</string>
+   </property>
+  </action>
+  <action name="actionFunctions_Dock">
+   <property name="text">
+    <string>Functions Dock</string>
+   </property>
+  </action>
+  <action name="actionOutput_Dock">
+   <property name="text">
+    <string>Output Dock</string>
+   </property>
+  </action>
+  <action name="actionToolbar">
+   <property name="text">
+    <string>Toolbar</string>
+   </property>
+  </action>
+  <action name="actionCompile">
+   <property name="text">
+    <string>Compile</string>
+   </property>
+  </action>
+  <action name="actionUpload">
+   <property name="text">
+    <string>Upload</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
    </property>
   </action>
  </widget>
