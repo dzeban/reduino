@@ -19,6 +19,10 @@
   <property name="windowTitle">
    <string>ReDuino</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/main</normaloff>:/main</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true"/>
   </property>
@@ -79,9 +83,10 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;table style=&quot;-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;&quot;&gt;
+&lt;table border=&quot;0&quot; style=&quot;-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;&quot;&gt;
 &lt;tr&gt;
 &lt;td style=&quot;border: none;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Liberation Sans';&quot;&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
@@ -124,7 +129,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:10pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;table style=&quot;-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;&quot;&gt;
+&lt;table border=&quot;0&quot; style=&quot;-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;&quot;&gt;
 &lt;tr&gt;
 &lt;td style=&quot;border: none;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Liberation Sans'; font-weight:400;&quot;&gt;// Project 12 - Melody Player&lt;/span&gt;&lt;/p&gt;
@@ -660,7 +665,7 @@ padding:0px;</string>
      <x>0</x>
      <y>0</y>
      <width>804</width>
-     <height>25</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_2">
@@ -775,21 +780,28 @@ padding:0px;</string>
    <property name="windowTitle">
     <string>toolBar</string>
    </property>
+   <property name="iconSize">
+    <size>
+     <width>50</width>
+     <height>30</height>
+    </size>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
-    <bool>false</bool>
+    <bool>true</bool>
    </attribute>
-   <addaction name="action_4"/>
-   <addaction name="action_5"/>
+   <addaction name="action_Open"/>
+   <addaction name="action_Save_2"/>
    <addaction name="separator"/>
    <addaction name="action_Undo"/>
    <addaction name="action_Redo"/>
    <addaction name="separator"/>
    <addaction name="action_Compile"/>
    <addaction name="action_Upload"/>
-   <addaction name="actionSerial_Monitor"/>
+   <addaction name="separator"/>
+   <addaction name="action_SerialMonitor"/>
   </widget>
   <action name="action">
    <property name="text">
@@ -806,12 +818,20 @@ padding:0px;</string>
     <string>&amp;Exit</string>
    </property>
   </action>
-  <action name="action_4">
+  <action name="action_Open">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/open</normaloff>:/open</iconset>
+   </property>
    <property name="text">
     <string>&amp;Open</string>
    </property>
   </action>
-  <action name="action_5">
+  <action name="action_Save_2">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/save</normaloff>:/save</iconset>
+   </property>
    <property name="text">
     <string>&amp;Save</string>
    </property>
@@ -827,6 +847,13 @@ padding:0px;</string>
    </property>
   </action>
   <action name="action_Copy">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/first-png</normaloff>:/first-png</iconset>
+   </property>
    <property name="text">
     <string>Undo</string>
    </property>
@@ -837,11 +864,19 @@ padding:0px;</string>
    </property>
   </action>
   <action name="action_Undo">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/undo</normaloff>:/undo</iconset>
+   </property>
    <property name="text">
     <string>&amp;Undo</string>
    </property>
   </action>
   <action name="action_Redo">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/redo</normaloff>:/redo</iconset>
+   </property>
    <property name="text">
     <string>&amp;Redo</string>
    </property>
@@ -867,11 +902,19 @@ padding:0px;</string>
    </property>
   </action>
   <action name="action_Compile">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/compile</normaloff>:/compile</iconset>
+   </property>
    <property name="text">
     <string>&amp;Compile</string>
    </property>
   </action>
   <action name="action_Upload">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/upload</normaloff>:/upload</iconset>
+   </property>
    <property name="text">
     <string>&amp;Upload</string>
    </property>
@@ -886,7 +929,11 @@ padding:0px;</string>
     <string>Connection</string>
    </property>
   </action>
-  <action name="actionSerial_Monitor">
+  <action name="action_SerialMonitor">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/monitor</normaloff>:/monitor</iconset>
+   </property>
    <property name="text">
     <string>Serial Monitor</string>
    </property>
@@ -998,6 +1045,8 @@ padding:0px;</string>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>
