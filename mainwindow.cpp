@@ -10,6 +10,13 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     QCppHighlighter *hi = new QCppHighlighter(ui->mainEdit_2->document());
+/*
+    QString s;
+    QPlainTextEdit *e = (QPlainTextEdit*)ui->tabWidget->widget(0);
+    e->document();
+    //s.setNum(im, 10);
+    ui->logArea->append(s);
+    */
 }
 
 MainWindow::~MainWindow()

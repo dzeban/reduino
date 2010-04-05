@@ -34,14 +34,21 @@ void MainWindow::on_actionOpenIcon_triggered()
     QString opening_file = QFileDialog::getOpenFileName(this, tr("Open"),0 ,tr("Source code(*.pde *.h *.c);; All files(*)"));
 
     //	Create new tab and upload file
-    QPlainTextEdit *edit = new QPlainTextEdit(get_file_content(opening_file));
+    QWidget *newtab = new QWidget();
+    QGridLayout *layout = new QGridLayout(newtab);
+    layout->setSpacing(6);
+    layout->setMargin(11);
+
+    QPlainTextEdit *edit = new QPlainTextEdit(get_file_content(opening_file), newtab);
+    layout->addWidget(edit,0,0,1,1);
+
     edit->setDocumentTitle(opening_file);
-    current_index = ui->tabWidget->addTab(edit, truncate_path(opening_file) );
+    current_index = ui->tabWidget->addTab(newtab, truncate_path(opening_file) );
 
     QWidget *w = ui->tabWidget->widget(current_index);
 
     //	Enable syntax highlight
-    QCppHighlighter *tab_highlight = new QCppHighlighter( ( (QPlainTextEdit*)w)->document() );
+    //QCppHighlighter *tab_highlight = new QCppHighlighter( ( (QPlainTextEdit*)w)->document() );
 
     //	Switch to opened file
     ui->tabWidget->setCurrentIndex(current_index);
@@ -50,7 +57,8 @@ void MainWindow::on_actionOpenIcon_triggered()
 
 void MainWindow::on_tabWidget_tabCloseRequested(int index)
 {
-    QPlainTextEdit *w = (QPlainTextEdit*)ui->tabWidget->widget(index);
+    QObjectList list = ui->tabWidget->widget(index)->children();
+    QPlainTextEdit *w = (QPlainTextEdit*)ui->tabWidget->widget(index)->children().last();
 
     ui->tabWidget->setCurrentIndex(index);
     if(w->document()->isModified())
@@ -60,6 +68,7 @@ void MainWindow::on_tabWidget_tabCloseRequested(int index)
     }
     else
     {
+
 	ui->tabWidget->removeTab(index);
     }
 }
@@ -80,10 +89,13 @@ void MainWindow::on_actionSaveIcon_triggered()
     if (save_file.open(QFile::ReadWrite))
     {
 	//Write to file
+	//QDataStream stream(&save_file);
+	//stream << w->toPlainText().toUtf8();
 	qint64 ff = save_file.write(w->toPlainText().toUtf8());
 	QString s;
 	s.setNum(ff);
 	ui->logArea->append(s);
+
     }
     else
     {
