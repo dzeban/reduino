@@ -15,6 +15,7 @@ class MainWindow : public QMainWindow {
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    void saveCurrentTab();
 
 protected:
     void changeEvent(QEvent *e);

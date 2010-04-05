@@ -3,12 +3,16 @@
 
 #include <QDialog>
 #include <QAbstractButton>
-
+#include "mainwindow.h"
 namespace Ui {
     class AskSaveDialog;
 }
 
-class AskSaveDialog : public QDialog {
+class AskSaveDialog : public QDialog
+{
+
+    MainWindow *m;
+
     Q_OBJECT
 public:
     AskSaveDialog(QWidget *parent = 0);
