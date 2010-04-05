@@ -36,7 +36,6 @@ void MainWindow::on_actionOpenIcon_triggered()
     //	Create new tab and upload file
     QPlainTextEdit *edit = new QPlainTextEdit(get_file_content(opening_file));
     edit->setDocumentTitle(opening_file);
-
     current_index = ui->tabWidget->addTab(edit, truncate_path(opening_file) );
 
     QWidget *w = ui->tabWidget->widget(current_index);
@@ -67,8 +66,9 @@ void MainWindow::on_tabWidget_tabCloseRequested(int index)
 
 void MainWindow::on_actionSaveIcon_triggered()
 {
+    //saveCurrentTab();
     // Get current QPlainTextEdit with saving text
-    QPlainTextEdit *w = (QPlainTextEdit*)ui->tabWidget->widget( ui->tabWidget->currentIndex() );
+    QPlainTextEdit *w = (QPlainTextEdit*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
 
     // Get full path to file
     QString filename = w->documentTitle();
@@ -80,11 +80,15 @@ void MainWindow::on_actionSaveIcon_triggered()
     if (save_file.open(QFile::ReadWrite))
     {
 	//Write to file
-	save_file.write(w->toPlainText().toUtf8());
+	qint64 ff = save_file.write(w->toPlainText().toUtf8());
+	QString s;
+	s.setNum(ff);
+	ui->logArea->append(s);
     }
     else
     {
 	// TODO: Do something. Like throw exception
+	ui->logArea->append("Failed on opening file");
     }
 
     save_file.close();

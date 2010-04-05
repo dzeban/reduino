@@ -1,12 +1,12 @@
 #include "asksavedialog.h"
 #include "ui_asksavedialog.h"
-#include "mainwindow.h"
 
 AskSaveDialog::AskSaveDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AskSaveDialog)
 {
     ui->setupUi(this);
+    m = (MainWindow*)parent;
     //ui->askSaveDialogButtonBox->
 }
 
@@ -37,7 +37,7 @@ void AskSaveDialog::on_askSaveDialogButtonBox_clicked(QAbstractButton* button)
 	case QDialogButtonBox::Yes :
 	{
 
-
+	    m->saveCurrentTab();
 	    break;
 	}
 
