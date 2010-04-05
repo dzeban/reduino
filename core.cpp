@@ -1,5 +1,4 @@
 #include <QFile>
-#include <QTextStream>
 
 QString get_file_content(QString filename)
 {
@@ -7,9 +6,8 @@ QString get_file_content(QString filename)
 
     QFile file(filename);
     if (file.open(QFile::ReadOnly))
-    {
 	file_content = file.readAll();
-    }
 
+    file.close();
     return file_content;
 }

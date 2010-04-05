@@ -9,10 +9,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
     QCppHighlighter *hi = new QCppHighlighter(ui->mainEdit_2->document());
-    //test
-    //ololo
+
 }
 
 MainWindow::~MainWindow()
@@ -23,12 +21,15 @@ MainWindow::~MainWindow()
 void MainWindow::changeEvent(QEvent *e)
 {
     QMainWindow::changeEvent(e);
-    switch (e->type()) {
-    case QEvent::LanguageChange:
-        ui->retranslateUi(this);
-        break;
-    default:
-        break;
+
+    switch (e->type())
+    {
+	case QEvent::LanguageChange:
+	    ui->retranslateUi(this);
+	    break;
+	default:
+	    break;
     }
 }
+
 

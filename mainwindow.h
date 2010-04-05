@@ -24,6 +24,7 @@ private:
     Ui::MainWindow *ui;
 
 private slots:
+    void on_actionSaveIcon_triggered();
     void on_tabWidget_tabCloseRequested(int index);
     void on_actionOpenIcon_triggered();
     void on_actionExit_triggered();
