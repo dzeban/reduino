@@ -1,0 +1,26 @@
+#labels Featured,Phase-Design,Phase-Implementation
+= Introduction =
+
+Allright, this page is made for planning our project and keeps current project flow. Here we should write all tasks, schedule, propsals, ideas and everything else regarded to development of project
+
+
+= Schedule =
+
+  # Complete basic IDE features such as
+    * Opening/closing files in tabs
+    * Saving files
+    * Syntax highlighting
+  # Make it a real "IDE", so it can
+    * Compile code
+    * Upload it to board
+  # Make a serial monitor
+  # Integrate documentation for wiring
+  # Make autocomplete
+
+= Tasks =
+
+  # Fix bug (id=3) to make it save file correctly
+
+= Ideas =
+
+  * Integrate IDE with Fritzing project to create a schemes and emulating (why not?) it
