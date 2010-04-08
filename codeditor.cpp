@@ -1,8 +1,15 @@
 #include "codeditor.h"
 
+/*
+ TODO: Constructors have same code. How can we merge them?
+*/
 
+/* Main constructor */
 CodeEditor::CodeEditor(QWidget *parent) : QPlainTextEdit(parent)
  {
+
+     QCppHighlighter *hi = new QCppHighlighter(this->document());
+
      lineNumberArea = new LineNumberArea(this);
 
      connect(this, SIGNAL(blockCountChanged(int)), this, SLOT(updateLineNumberAreaWidth(int)));
@@ -12,6 +19,22 @@ CodeEditor::CodeEditor(QWidget *parent) : QPlainTextEdit(parent)
      updateLineNumberAreaWidth(0);
      highlightCurrentLine();
  }
+
+/* Constructor with automatic filling content of CodeEditor with text from QString */
+CodeEditor::CodeEditor(QString const &s,QWidget *parent) : QPlainTextEdit(s,parent)
+ {
+     QCppHighlighter *hi = new QCppHighlighter(this->document());
+
+     lineNumberArea = new LineNumberArea(this);
+
+     connect(this, SIGNAL(blockCountChanged(int)), this, SLOT(updateLineNumberAreaWidth(int)));
+     connect(this, SIGNAL(updateRequest(const QRect &, int)), this, SLOT(updateLineNumberArea(const QRect &, int)));
+     connect(this, SIGNAL(cursorPositionChanged()), this, SLOT(highlightCurrentLine()));
+
+     updateLineNumberAreaWidth(0);
+     highlightCurrentLine();
+ }
+
 
 
 

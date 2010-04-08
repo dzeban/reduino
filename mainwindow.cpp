@@ -67,3 +67,8 @@ void MainWindow::saveCurrentTab()
     save_file.close();
 }
 
+
+void MainWindow::on_actionLine_wrap_triggered(bool checked)
+{
+
+}

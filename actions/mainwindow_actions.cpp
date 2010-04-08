@@ -39,7 +39,7 @@ void MainWindow::on_actionOpenIcon_triggered()
     layout->setSpacing(6);
     layout->setMargin(11);
 
-    QPlainTextEdit *edit = new QPlainTextEdit(get_file_content(opening_file), newtab);
+    CodeEditor *edit = new CodeEditor(get_file_content(opening_file), newtab);
     layout->addWidget(edit,0,0,1,1);
 
     edit->setDocumentTitle(opening_file);
@@ -58,7 +58,7 @@ void MainWindow::on_actionOpenIcon_triggered()
 void MainWindow::on_tabWidget_tabCloseRequested(int index)
 {
     QObjectList list = ui->tabWidget->widget(index)->children();
-    QPlainTextEdit *w = (QPlainTextEdit*)ui->tabWidget->widget(index)->children().last();
+    CodeEditor *w = (CodeEditor*)ui->tabWidget->widget(index)->children().last();
 
     ui->tabWidget->setCurrentIndex(index);
     if(w->document()->isModified())
@@ -77,7 +77,7 @@ void MainWindow::on_actionSaveIcon_triggered()
 {
     //saveCurrentTab();
     // Get current QPlainTextEdit with saving text
-    QPlainTextEdit *w = (QPlainTextEdit*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
+    CodeEditor *w = (CodeEditor*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
 
     // Get full path to file
     QString filename = w->documentTitle();
