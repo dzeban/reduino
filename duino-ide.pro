@@ -8,11 +8,13 @@ SOURCES += main.cpp \
     highlighter.cpp \
     actions/mainwindow_actions.cpp \
     core.cpp \
-    dialogs/asksavedialog.cpp
+    dialogs/asksavedialog.cpp \
+    code_edit.cpp
 HEADERS += mainwindow.h \
     highlighter.h \
     core.h \
-    dialogs/asksavedialog.h
+    dialogs/asksavedialog.h \
+    code_edit.h
 FORMS += mainwindow.ui \
     dialogs/asksavedialog.ui
 RESOURCES += icons.qrc
