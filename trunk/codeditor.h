@@ -6,6 +6,8 @@
 #include <QPainter>
 #include <QTextBlock>
 
+#include "highlighter.h"
+
 class QPaintEvent;
 class QResizeEvent;
 class QSize;
@@ -20,6 +22,7 @@ class CodeEditor : public QPlainTextEdit
 
 public:
     CodeEditor(QWidget *parent = 0);
+    CodeEditor(QString const &s,QWidget *parent);
 
     void lineNumberAreaPaintEvent(QPaintEvent *event);
     int lineNumberAreaWidth();

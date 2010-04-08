@@ -650,7 +650,7 @@ padding:0px;</string>
      <x>0</x>
      <y>0</y>
      <width>804</width>
-     <height>25</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_2">
@@ -678,6 +678,7 @@ padding:0px;</string>
     <property name="title">
      <string>&amp;View</string>
     </property>
+    <addaction name="actionLine_wrap"/>
    </widget>
    <widget class="QMenu" name="menu_5">
     <property name="title">
@@ -1022,6 +1023,14 @@ padding:0px;</string>
   <action name="actionCopy">
    <property name="text">
     <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionLine_wrap">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Line wrap</string>
    </property>
   </action>
  </widget>
