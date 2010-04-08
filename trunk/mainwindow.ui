@@ -54,7 +54,7 @@
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideNone</enum>
@@ -94,7 +94,7 @@
          <number>0</number>
         </property>
         <item row="1" column="0">
-         <widget class="QPlainTextEdit" name="mainEdit_2">
+         <widget class="CodeEditor" name="mainEdit_2">
           <property name="font">
            <font>
             <family>Arial</family>
@@ -114,7 +114,7 @@
            <number>1</number>
           </property>
           <property name="documentTitle">
-           <string>example</string>
+           <string/>
           </property>
           <property name="plainText">
            <string>// Project 12 - Melody Player
@@ -1026,6 +1026,13 @@ padding:0px;</string>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CodeEditor</class>
+   <extends>QPlainTextEdit</extends>
+   <header location="global">code_edit.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="icons.qrc"/>
  </resources>
