@@ -36,13 +36,21 @@ void MainWindow::on_actionOpenIcon_triggered()
     //	Create new tab and upload file
     QWidget *newtab = new QWidget();
     QGridLayout *layout = new QGridLayout(newtab);
-    layout->setSpacing(6);
-    layout->setMargin(11);
+    layout->setSpacing(0);
+    layout->setMargin(0);
 
     CodeEditor *edit = new CodeEditor(get_file_content(opening_file), newtab);
+
     layout->addWidget(edit,0,0,1,1);
 
     edit->setDocumentTitle(opening_file);
+
+    QFont editfont;
+    editfont.setStyleStrategy(QFont::PreferAntialias);
+    editfont.setFamily("Arial");
+    editfont.setPointSize(9);
+
+    edit->setFont(editfont);
     current_index = ui->tabWidget->addTab(newtab, truncate_path(opening_file) );
 
     QWidget *w = ui->tabWidget->widget(current_index);
@@ -57,27 +65,40 @@ void MainWindow::on_actionOpenIcon_triggered()
 
 void MainWindow::on_tabWidget_tabCloseRequested(int index)
 {
-    QObjectList list = ui->tabWidget->widget(index)->children();
-    CodeEditor *w = (CodeEditor*)ui->tabWidget->widget(index)->children().last();
-
-    ui->tabWidget->setCurrentIndex(index);
+//   QObjectList list = ui->tabWidget->widget(index)->children();
+//    CodeEditor *w = (CodeEditor*)ui->tabWidget->widget(index)->children().last();
+    CodeEditor *w = this->getEditorByTabIndex(index);
+  //  ui->tabWidget->setCurrentIndex(index);
     if(w->document()->isModified())
     {
-	AskSaveDialog *save_dialog = new AskSaveDialog(this);
+        AskSaveDialog *save_dialog = new AskSaveDialog(this);
+        save_dialog->tabIndex=index;
 	save_dialog->exec();
     }
     else
     {
-
 	ui->tabWidget->removeTab(index);
     }
 }
+
+void MainWindow::closetabdialog_actionDontSaveAndClose(int index)
+{
+        ui->tabWidget->removeTab(index);
+}
+
+void MainWindow::closetabdialog_actionSaveAndClose(int index)
+{
+     //   this->getEditorByTabIndex(index)->document()->setModified(false);
+        this->on_actionSaveIcon_triggered();
+        this->closetabdialog_actionDontSaveAndClose(index);
+}
+
 
 void MainWindow::on_actionSaveIcon_triggered()
 {
     //saveCurrentTab();
     // Get current QPlainTextEdit with saving text
-    CodeEditor *w = (CodeEditor*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
+    CodeEditor *w = this->getCurrentEditor();
 
     // Get full path to file
     QString filename = w->documentTitle();
@@ -104,4 +125,17 @@ void MainWindow::on_actionSaveIcon_triggered()
     }
 
     save_file.close();
+}
+
+
+void MainWindow::on_actionLine_wrap_triggered(bool checked)
+{
+    CodeEditor *e;
+    foreach (e,this->getActiveEditorsList()){
+        switch (checked){
+            case 0: e->setLineWrapMode(QPlainTextEdit::NoWrap); break;
+            case 1: e->setLineWrapMode(QPlainTextEdit::WidgetWidth);  break;
+        }
+
+    }
 }

@@ -67,8 +67,28 @@ void MainWindow::saveCurrentTab()
     save_file.close();
 }
 
-
-void MainWindow::on_actionLine_wrap_triggered(bool checked)
-{
-
+QTabWidget* MainWindow::getEditorTabWidget(){
+        return this->ui->tabWidget;
 }
+
+QList <CodeEditor*> MainWindow::getActiveEditorsList(){
+        QList <CodeEditor *> clist;
+        QTabWidget *tw=this->getEditorTabWidget();
+        for (int i=0; i < tw->count(); i++){
+                clist.push_front((CodeEditor *)tw->widget(i)->children().last());
+        }
+        return clist;
+}
+
+CodeEditor* MainWindow::getCurrentEditor(){
+     QTabWidget *tw=this->getEditorTabWidget();
+     return (CodeEditor *)tw->widget(tw->currentIndex())->children().last();
+}
+
+CodeEditor* MainWindow::getEditorByTabIndex(int index){
+    QTabWidget *tw=this->getEditorTabWidget();
+    return (CodeEditor *)tw->widget(index)->children().last();
+}
+
+
+
