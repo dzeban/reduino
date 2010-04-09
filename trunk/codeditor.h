@@ -37,6 +37,9 @@ private slots:
 
 private:
     QWidget *lineNumberArea;
+    QString styleSheet() {
+        return QString("shelmesh");
+    }
 };
 
 //area with numbers in CodeEditor class

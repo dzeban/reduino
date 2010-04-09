@@ -20,7 +20,7 @@
    <string>ReDuino</string>
   </property>
   <property name="windowIcon">
-   <iconset>
+   <iconset resource="icons.qrc">
     <normaloff>:/main</normaloff>:/main</iconset>
   </property>
   <property name="styleSheet">
@@ -98,7 +98,7 @@
           <property name="font">
            <font>
             <family>Arial</family>
-            <pointsize>10</pointsize>
+            <pointsize>9</pointsize>
             <weight>50</weight>
             <bold>false</bold>
             <stylestrategy>PreferAntialias</stylestrategy>
@@ -796,7 +796,7 @@ padding:0px;</string>
   </action>
   <action name="actionOpenIcon">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/open</normaloff>:/open</iconset>
    </property>
    <property name="text">
@@ -808,7 +808,7 @@ padding:0px;</string>
   </action>
   <action name="actionSaveIcon">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/save</normaloff>:/save</iconset>
    </property>
    <property name="text">
@@ -847,7 +847,7 @@ padding:0px;</string>
   </action>
   <action name="actionUndoIcon">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/undo</normaloff>:/undo</iconset>
    </property>
    <property name="text">
@@ -856,7 +856,7 @@ padding:0px;</string>
   </action>
   <action name="action_Redo">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/redo</normaloff>:/redo</iconset>
    </property>
    <property name="text">
@@ -885,7 +885,7 @@ padding:0px;</string>
   </action>
   <action name="actionCompileIcon">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/compile</normaloff>:/compile</iconset>
    </property>
    <property name="text">
@@ -894,7 +894,7 @@ padding:0px;</string>
   </action>
   <action name="actionUploadIcon">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/upload</normaloff>:/upload</iconset>
    </property>
    <property name="text">
@@ -913,7 +913,7 @@ padding:0px;</string>
   </action>
   <action name="actionSerialMonitor">
    <property name="icon">
-    <iconset>
+    <iconset resource="icons.qrc">
      <normaloff>:/monitor</normaloff>:/monitor</iconset>
    </property>
    <property name="text">
@@ -1029,6 +1029,9 @@ padding:0px;</string>
    <property name="checkable">
     <bool>true</bool>
    </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Line wrap</string>
    </property>
@@ -1042,6 +1045,8 @@ padding:0px;</string>
    <header location="global">codeditor.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

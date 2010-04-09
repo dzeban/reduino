@@ -6,7 +6,8 @@ AskSaveDialog::AskSaveDialog(QWidget *parent) :
     ui(new Ui::AskSaveDialog)
 {
     ui->setupUi(this);
-    m = (MainWindow*)parent;
+    connect(this,SIGNAL(yesButtonClicked(int)),parent,SLOT(closetabdialog_actionSaveAndClose(int)));
+    connect(this,SIGNAL(noButtonClicked(int)),parent,SLOT(closetabdialog_actionDontSaveAndClose(int)));
     //ui->askSaveDialogButtonBox->
 }
 
@@ -36,13 +37,14 @@ void AskSaveDialog::on_askSaveDialogButtonBox_clicked(QAbstractButton* button)
     {
 	case QDialogButtonBox::Yes :
 	{
-
-	    m->saveCurrentTab();
+            emit yesButtonClicked(tabIndex);
 	    break;
 	}
 
 	case QDialogButtonBox::No :
 	{
+            qDebug() << tabIndex;
+            emit noButtonClicked(tabIndex);
 	    break;
 	}
 

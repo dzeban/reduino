@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QAbstractButton>
 #include "mainwindow.h"
+
 namespace Ui {
     class AskSaveDialog;
 }
@@ -17,6 +18,11 @@ class AskSaveDialog : public QDialog
 public:
     AskSaveDialog(QWidget *parent = 0);
     ~AskSaveDialog();
+    int tabIndex;
+
+signals:
+    void yesButtonClicked(int index);
+    void noButtonClicked(int index);
 
 protected:
     void changeEvent(QEvent *e);
