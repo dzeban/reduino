@@ -117,8 +117,6 @@ void MainWindow::on_actionSaveIcon_triggered()
     if (save_file.open(QFile::ReadWrite|QFile::Truncate))
     {
 	//Write to file
-	//QDataStream stream(&save_file);
-	//stream << w->toPlainText().toUtf8();
 	qint64 ff = save_file.write(w->toPlainText().toUtf8());
 	QString s;
 	s.setNum(ff);
