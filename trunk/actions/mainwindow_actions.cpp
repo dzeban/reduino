@@ -39,36 +39,43 @@ void MainWindow::on_actionOpenIcon_triggered()
     layout->setSpacing(0);
     layout->setMargin(0);
 
+    if(opening_file=="")
+    {
+    	QDir dir;
+	opening_file=dir.absolutePath()+"/New file";
+	// TODO: I guess we should call new files like 'New file', 'New file1', 'New file2', etc.,
+	//  but in that case we have to store somewhere current increment value(i.e. 1,2,etc.).
+    }
+
     CodeEditor *edit = new CodeEditor(get_file_content(opening_file), newtab);
+    edit->setDocumentTitle(opening_file);
 
     layout->addWidget(edit,0,0,1,1);
 
-    edit->setDocumentTitle(opening_file);
-
+    // Set fonts
     QFont editfont;
     editfont.setStyleStrategy(QFont::PreferAntialias);
     editfont.setFamily("Arial");
     editfont.setPointSize(9);
-
     edit->setFont(editfont);
+
+    // And, finally, insert tab
     current_index = ui->tabWidget->addTab(newtab, truncate_path(opening_file) );
 
     QWidget *w = ui->tabWidget->widget(current_index);
 
-    //	Enable syntax highlight
-    //QCppHighlighter *tab_highlight = new QCppHighlighter( ( (QPlainTextEdit*)w)->document() );
-
     //	Switch to opened file
     ui->tabWidget->setCurrentIndex(current_index);
+
     QObject::connect(w, SIGNAL(modificationChanged(bool)), this, SLOT( on_modificationChanged() ) );
 }
 
 void MainWindow::on_tabWidget_tabCloseRequested(int index)
 {
-//   QObjectList list = ui->tabWidget->widget(index)->children();
-//    CodeEditor *w = (CodeEditor*)ui->tabWidget->widget(index)->children().last();
+
     CodeEditor *w = this->getEditorByTabIndex(index);
-  //  ui->tabWidget->setCurrentIndex(index);
+    ui->tabWidget->setCurrentIndex(index);
+
     if(w->document()->isModified())
     {
         AskSaveDialog *save_dialog = new AskSaveDialog(this);
@@ -107,7 +114,7 @@ void MainWindow::on_actionSaveIcon_triggered()
     QFile save_file(filename);
 
     // Open file
-    if (save_file.open(QFile::ReadWrite))
+    if (save_file.open(QFile::ReadWrite|QFile::Truncate))
     {
 	//Write to file
 	//QDataStream stream(&save_file);
@@ -116,7 +123,6 @@ void MainWindow::on_actionSaveIcon_triggered()
 	QString s;
 	s.setNum(ff);
 	ui->logArea->append(s);
-
     }
     else
     {
@@ -134,7 +140,7 @@ void MainWindow::on_actionLine_wrap_triggered(bool checked)
     foreach (e,this->getActiveEditorsList()){
         switch (checked){
             case 0: e->setLineWrapMode(QPlainTextEdit::NoWrap); break;
-            case 1: e->setLineWrapMode(QPlainTextEdit::WidgetWidth);  break;
+	    case 1: e->setLineWrapMode(QPlainTextEdit::WidgetWidth); break;
         }
 
     }
