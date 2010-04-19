@@ -18,3 +18,4 @@ HEADERS += mainwindow.h \
 FORMS += mainwindow.ui \
     dialogs/asksavedialog.ui
 RESOURCES += icons.qrc
+OTHER_FILES += 
