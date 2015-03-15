@@ -1,0 +1,1 @@
+ReDuino - is the IDE for developing programms for Arduino. It's written on Qt framework so it's crossplatform and really cool.
